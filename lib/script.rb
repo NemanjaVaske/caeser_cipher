@@ -34,5 +34,4 @@ class CaesarCipher
         p result
     end
 end
-#n = CaesarCipher.new
-#n.caesar_cipher("i", -106)
+
