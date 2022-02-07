@@ -5,16 +5,16 @@ describe CaesarCipher do
 
     describe "#caesar_cipher" do
         it "works with small positive shitf" do
-            expect(subject.caesar_cipher("Zz",5)).to eql("Ee")
+            expect(subject.caesar_cipher("Aa Oo Zz",5)).to eql("Ff Tt Ee")
         end
         it "works with large positive shift" do
-            expect(subject.caesar_cipher("Zz", 421)).to eql("Ee")
+            expect(subject.caesar_cipher("Aa Oo Zz", 421)).to eql("Ff Tt Ee")
         end
         it "works with small negative shift" do 
-            expect(subject.caesar_cipher("Ee", -5)).to eql("Zz")
+            expect(subject.caesar_cipher("Aa Oo Zz", -5)).to eql("Vv Jj Uu")
         end
         it "works with large negative shift" do
-            expect(subject.caesar_cipher("Ee",-421)).to eql("Zz")
+            expect(subject.caesar_cipher("Aa Oo Zz",-421)).to eql("Vv Jj Uu")
         end
         it "works with sentence with small positive shift" do
             expect(subject.caesar_cipher("What, a string!", 5)).to eql("Bmfy, f xywnsl!")
