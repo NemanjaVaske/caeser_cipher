@@ -12,7 +12,7 @@ class CaesarCipher
             #     if(elem + shift_factor).between?(65,90)  || (elem + shift_factor).between?(97,122)
             #         elem + shift_factor
             #     else elem + shift_factor - 26
-            #     end
+            #     endq
             # else elem
             # end  
             if elem.between?(65,90)
