@@ -1,4 +1,4 @@
-#Implement a caesar cipher that takes in a string and the shift factor and then outputs the modified string
+#Implement a caesar cipher that takes in a string and the shift factor and then outputs the modified string 
 class CaesarCipher
     def caesar_cipher(string, shift_factor)
         shift_factor = shift_factor % 26
